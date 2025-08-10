@@ -1,33 +1,38 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color primaryGreen = Color(0xFF047857);
-  static const Color positive = Color(0xFF10B981);
-  static const Color negative = Color(0xFFDC2626);
-  static const Color background = Colors.white;
+  static const primaryGreen = Color(0xFF047857);
+  static const positive = Color(0xFF10B981);
+  static const negative = Color(0xFFDC2626);
+  static const background = Colors.white;
+  static const cardBackground = Color(0xFFF9FAFB);
 }
 
 class AppTextStyles {
-  static const TextStyle heading = TextStyle(fontSize: 18);
-  static const TextStyle balance = TextStyle(
+  static const heading = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: Colors.black, 
+  );
+  static const balance = TextStyle(
     fontSize: 32,
     fontWeight: FontWeight.bold,
     color: AppColors.primaryGreen,
   );
-  static const TextStyle positiveAmount = TextStyle(
+  static const positiveAmount = TextStyle(
     color: AppColors.positive,
     fontWeight: FontWeight.bold,
   );
-  static const TextStyle negativeAmount = TextStyle(
+  static const negativeAmount = TextStyle(
     color: AppColors.negative,
     fontWeight: FontWeight.bold,
   );
 }
 
 class AppSpacing {
-  static const double xs = 4;
-  static const double sm = 8;
-  static const double md = 16;
-  static const double lg = 24;
-  static const double xl = 32;
+  static const xs = 4.0;
+  static const sm = 8.0;
+  static const md = 16.0;
+  static const lg = 24.0;
+  static const xl = 32.0;
 }
